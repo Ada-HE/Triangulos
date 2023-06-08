@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica triangulo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="TRIAN.js"></script>
+</head>
+<body>
+    <div id ="container">
+        <div id="header">
+            <h1>Triangulo JS</h1>
+        </div>
+        <div id="contenido">
+            <h2>Calcula datos de un triangulo</h2>
+            <p>
+                <input type="number"
+                name="L1"
+                id="L1"
+                placeholder="Captura valor 1"
+                onblur="capturan1()"
+                value="0">
+            </p>
+            <p>
+                <input type="number"
+                name="L2"
+                id="L2"
+                placeholder="Captura valor 2"
+                onblur="capturan2()"
+                value="0">
+                    
+            </p>
+            <p>
+                <input type="number"
+                name="L3"
+                id="L3"
+                placeholder="Captura valor 3"
+                onblur="capturan3()"
+                value="0">
+                    
+            </p>
+            <input type="button" value="Calcula perimetro" onclick="Perimetro()">
+            <input type="button" value="Calcula Área" onclick="calcularA()">
+            <input type="button" value="Determina el tipo de triangulo" onclick="Tipo()">
+    
+            <h2 id="resultado">El resultado es: </h2>
+
+            
+        </div>
+        </div>     
+</body>
+</html>
